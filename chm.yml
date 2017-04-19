@@ -7,8 +7,8 @@ logging:
   level:
     root: INFO
     org.apache: WARN
-    org.springframework: WARN
-    org.springframework.boot.context.embedded.tomcat: INFO
+    org.springframework: DEBUG
+    org.springframework.boot.context.embedded.tomcat: DEBUG
     com.teague: DEBUG
   pattern:
       file: '[%d{yyyy-MM-dd HH:mm:ss.SSS}]  [%thread] %-5level %logger{50} - %msg%n'

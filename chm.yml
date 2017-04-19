@@ -43,6 +43,9 @@ web:
 spring:
      mvc:
           static-path-pattern: '/**'
+          view:
+             prefix: '/'
+             suffix: .html             
      resources:
            static-locations: 'file:${web.upload-path}'
      http:

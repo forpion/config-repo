@@ -43,9 +43,16 @@ web:
 spring:
      mvc:
           static-path-pattern: '/**'
-          view:
-             prefix: '/'
-             suffix: .html             
+#          view:
+#             prefix: '/'
+#             suffix: .html       
+     thymeleaf: 
+         prefix: 'file:${web.upload-path}'
+         suffix: .html
+         mode: HTML5
+         encoding: UTF-8 
+         content-type: text/html
+         cache: false        
      resources:
            static-locations: 'file:${web.upload-path}'
      http:

@@ -16,7 +16,12 @@ logging:
       level: debug
 
 server:
-  port: 80
+  port: 8443
+  ssl: 
+    key-store: 'file:C:/sos/client1.p12'
+    key-store-password: 123456
+    keyStoreType: PKCS12
+    keyAlias: client1
 
 multipart:
      maxFileSize: 10Mb

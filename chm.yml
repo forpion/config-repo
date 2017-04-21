@@ -9,7 +9,7 @@ logging:
     org.apache: WARN
     org.springframework: WARN
     org.springframework.boot.context.embedded.tomcat: WARN
-    com.teague: DEBUG
+    com.teague: WARN
   pattern:
       file: '[%d{yyyy-MM-dd HH:mm:ss.SSS}]  [%thread] %-5level %logger{50} - %msg%n'
       console: '[%d{yyyy-MM-dd HH:mm:ss}] [%-5p] [%-8t]  [%c] L:%-3L - %m%n'
